@@ -4,11 +4,11 @@
 
 Project 2. Spaceship Interface ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_2_Spaceship_Interface) )  
 
-Project 3. Love o Meter ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_3_Love_o_meter_(Temperature%20Sensor))  
+Project 3. Love o Meter ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_3_Love_o_meter_(Temperature%20Sensor)) )    
 
-Project 4. Color Mixing Lamp ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_4_Color_Mixing_Lamp_(Photoresistor_rgbLED))  
+Project 4. Color Mixing Lamp ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_4_Color_Mixing_Lamp_(Photoresistor_rgbLED)) )  
 
-Project 5. Mood Cue Servo ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_5_Mood_Cue_(Servo))  
+Project 5. Mood Cue Servo ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_5_Mood_Cue_(Servo)) )  
 
 Project 6. Light Theremin ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_6_Light_Theremin_(Piezo)) )  
 [![Arduino Theramin](https://img.youtube.com/vi/jQWB6NeMSFU/0.jpg)](https://www.youtube.com/watch?v=jQWB6NeMSFU)  
