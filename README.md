@@ -16,7 +16,7 @@ Project 6. Light Theremin ( [_source_](https://github.com/CodeMuz/arduino-projec
 Project 7. A Basic Keyboard ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_7_Keyboard_Instrument/sketch_jun21a) )  
 [![Basic Keyboard](https://img.youtube.com/vi/1vNOPVI5hh4/0.jpg)](https://www.youtube.com/watch?v=1vNOPVI5hh4)  
 
-Project 8. Digital Hourgladd ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_8_Digital_Hourglass/sketch_jun30a)  
+Project 8. Digital Hourgladd ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_8_Digital_Hourglass/sketch_jun30a)  )
 
 Project 9. A Motor Pinwheel ( [_source_](https://github.com/CodeMuz/arduino-projects/tree/master/Project_9_Motorized_Pinwheel/sketch_jun30b) )  
 [![Pinwheel](https://img.youtube.com/vi/oZZ59lauBoI/0.jpg)](https://www.youtube.com/watch?v=oZZ59lauBoI)  
