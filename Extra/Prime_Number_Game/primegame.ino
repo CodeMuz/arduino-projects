@@ -12,7 +12,7 @@ int noState = 0;
 
 int mutex = 0; //locking device
 
-const int maxNumber = 3167;
+const int maxNumber = 8191;
 
 const int TOP_ROW = 0;
 const int BOTTOM_ROW = 1;
