@@ -10,9 +10,6 @@ int prevNumber = 0; // prevent the same number twice
 int yesState = 0;
 int noState = 0;
 
-int totalAnswers = 0;
-int correctAnswers = 0;
-
 int mutex = 0; //locking device
 
 const int maxNumber = 3167;
@@ -22,7 +19,7 @@ const int BOTTOM_ROW = 1;
 
 const int second = 1000; // 1 s = 1000 ms
 
-boolean isPrime(long n) {
+boolean isPrime(unsigned long n) {
 
   if (n <= 1) {
     return false;
@@ -45,9 +42,9 @@ boolean isPrime(long n) {
 /*
 Returns an odd integer between 0 and maxNumber
 */
-long generateNewNumber() {
+unsigned long generateNewNumber() {
 
-  long n = random(11 * analogRead(seedPin)) % maxNumber;
+  unsigned long n = random(11 * analogRead(seedPin)) % maxNumber;
   
   //bias distribution to return higher percent composite
   if(n % 2 == 0 || n % 3 == 0 || n == 1 || n == prevNumber){
@@ -73,24 +70,16 @@ Serial.begin(9600);
 
 }
 
-void printScore(int yesState, long number){
-
-    lcd.setCursor(0, BOTTOM_ROW);
-
-    //Did user guess correct
-    if (yesState == isPrime(number)) {
-      correctAnswers = correctAnswers + 1;
-    }
-    
-    totalAnswers = totalAnswers + 1;
+void printScore(int correctAnswers, int totalAnswers){        
 
     lcd.setCursor(0, BOTTOM_ROW);
     lcd.print("Score: " + String(correctAnswers) + " / " + String(totalAnswers));
+
 }
 
-long printNewNumber(){
+unsigned long printNewNumber(){
 
-    long number = generateNewNumber();
+    unsigned long number = generateNewNumber();
     lcd.setCursor(0, TOP_ROW);
     lcd.print(number);
 
@@ -99,7 +88,9 @@ long printNewNumber(){
 
 void loop() {
 
-  static long number;
+  static unsigned long number;
+  static int totalAnswers = 0;
+  static int correctAnswers = 0;
 
   //Generate a new number
   if (number == NULL)
@@ -109,15 +100,22 @@ void loop() {
 
   yesState = digitalRead(yesPin);
   noState = digitalRead(noPin);
-
+  
   if ((yesState == HIGH || noState == HIGH) && mutex == 0) {
 
-    mutex = 1;
+    mutex = 1; //locking device
+
+    totalAnswers = totalAnswers + 1;
 
     //Reset LCD screen prior to next number
     lcd.clear();
 
-    printScore(yesState, number);
+    //Did user guess correct
+    if (yesState == isPrime(number)) {
+      correctAnswers = correctAnswers + 1;
+    }
+
+    printScore(correctAnswers, totalAnswers);
 
     number = printNewNumber();
 
