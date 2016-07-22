@@ -22,9 +22,6 @@ const int BOTTOM_ROW = 1;
 
 const int second = 1000; // 1 s = 1000 ms
 
-//to do count the number of correct results
-//int correct = 0;
-
 boolean isPrime(long n) {
 
   if (n <= 1) {
